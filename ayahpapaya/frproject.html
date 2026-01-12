@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
+
     <style>
         * {
             margin: 0;
@@ -12,7 +13,7 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
             background: #fafafa;
             padding-bottom: 60px;
         }
@@ -301,14 +302,7 @@
             gap: 12px;
         }
 
-        .comment-avatar {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            background: #ddd;
-            flex-shrink: 0;
-        }
-
+       
         .comment-content {
             flex: 1;
         }
@@ -406,7 +400,7 @@
         }
 
         .back-btn {
-            background: #666;
+            background: #000;
             color: white;
             border: none;
             padding: 8px 20px;
@@ -420,20 +414,6 @@
             background: #555;
         }
 
-        .subscribe-btn {
-            background: #ff6719;
-            color: white;
-            border: none;
-            padding: 8px 20px;
-            border-radius: 4px;
-            font-weight: 600;
-            cursor: pointer;
-            font-size: 14px;
-        }
-
-        .subscribe-btn:hover {
-            background: #e55a0f;
-        }
 
         .hero {
             max-width: 680px;
@@ -452,12 +432,12 @@
 
         .hero-subtitle {
             font-size: 20px;
-            color: #666;
+            color: #000;
             margin-bottom: 24px;
         }
 
         .hero-stats {
-            color: #666;
+            color: #000;
             font-size: 14px;
             margin-bottom: 24px;
         }
@@ -473,18 +453,15 @@
             padding-bottom: 40px;
             margin-bottom: 40px;
             cursor: pointer;
-            transition: opacity 0.2s;
+     
         }
 
-        .essay-post:hover {
-            opacity: 0.8;
-        }
+
 
         .post-date {
-            color: #666;
+            color: #000;
             font-size: 14px;
             margin-bottom: 12px;
-            text-transform: uppercase;
             letter-spacing: 0.5px;
         }
 
@@ -498,7 +475,7 @@
 
         .essay-subtitle {
             font-size: 18px;
-            color: #666;
+            color: #000;
             margin-bottom: 16px;
             line-height: 1.5;
         }
@@ -508,7 +485,7 @@
             align-items: center;
             gap: 16px;
             font-size: 14px;
-            color: #666;
+            color: #000;
         }
 
         .essay-modal {
@@ -541,7 +518,7 @@
             right: 20px;
             font-size: 32px;
             cursor: pointer;
-            color: #666;
+            color: #000;
             background: white;
             width: 40px;
             height: 40px;
@@ -566,14 +543,14 @@
 
         .article-subtitle {
             font-size: 22px;
-            color: #666;
+            color: #000;
             margin-bottom: 40px;
             line-height: 1.4;
         }
 
         .article-date {
             font-size: 14px;
-            color: #666;
+            color: #000;
             margin-bottom: 40px;
             padding-bottom: 20px;
             border-bottom: 1px solid #e6e6e6;
@@ -651,7 +628,7 @@
                         <div class="profile-avatar-inner"></div>
                     </div>
                     <div class="profile-info">
-                        <div class="profile-username">marc.leshh</div>
+                        <div class="profile-username">marc.monsieur</div>
                         <div class="profile-stats">
                             <div class="stat">
                                 <span class="stat-number">13</span>
@@ -667,10 +644,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="header-icons">
+                        <span onclick="openDM()">💬</span>
+                    </div>
                 </div>
                 <div class="profile-bio">
                     <div class="profile-name">Mr. Marc </div>
-                    Le Societe d’Humanité Historique <br> 
+                    La Société d’Humanité Historique <br> 
                     Artiste émergent <br>
                     <a class="profile-link" href="javascript:void(0)" onclick="showSubstack()">lire mes essais ici</a>
                 </div>
@@ -681,7 +661,7 @@
             <div class="post" onclick="openModal(0)">
                 <div class="post-header">
                     <div class="post-avatar"></div>
-                    <div class="post-user">marc.leshh</div>
+                    <div class="post-user">marc.monsieur</div>
                 </div>
                 <div class="post-image" id="post-image-1"><img src="modern.png" style="width: 100%; height: 100%; object-fit: cover;"></div>
                 <div class="post-actions">
@@ -691,7 +671,7 @@
                 </div>
                 <div class="post-jaime">1.2M jaime</div>
                 <div class="post-caption">
-                    <span class="username">marc.leshh</span>
+                    <span class="username">marc.monsieur</span>
                     Ma première œuvre <br>J'ai récemment décidé d'apprendre les complexités de l'art pour moi-même. Les bleus dans ce tableau révèlent la vulnérabilité de la couleur et ce qu'elle représente. Ce n'est pas de l'art moderne, mais plutôt un expérience viscérale. 
                 </div>
                 <div class="post-comments-link">commentaires</div>
@@ -701,7 +681,7 @@
             <div class="post" onclick="openModal(1)">
                 <div class="post-header">
                     <div class="post-avatar"></div>
-                    <div class="post-user">marc.leshh</div>
+                    <div class="post-user">marc.monsieur</div>
                 </div>
                 <div class="post-image" id="post-image-2"><img src="farm.png" style="width: 100%; height: 100%; object-fit: cover;"></div>
                 <div class="post-actions">
@@ -711,7 +691,7 @@
                 </div>
                 <div class="post-jaime">280,872 jaime</div>
                 <div class="post-caption">
-                    <span class="username">marc.leshh</span>
+                    <span class="username">marc.monsieur</span>
                     La seule place ou je peux penser et travailler en même temps. C’est comme un paysage flamand dans la vraie vie. <br>#viedelaferme #penseur #art
 
                 </div>
@@ -722,7 +702,7 @@
             <div class="post" onclick="openModal(2)">
                 <div class="post-header">
                     <div class="post-avatar"></div>
-                    <div class="post-user">marc.leshh</div>
+                    <div class="post-user">marc.monsieur</div>
                 </div>
                 <div class="post-image" id="post-image-3"><img src="prez.png" style="width: 100%; height: 100%; object-fit: cover;"></div>
                 <div class="post-actions">
@@ -732,7 +712,7 @@
                 </div>
                 <div class="post-jaime">870,233 jaime</div>
                 <div class="post-caption">
-                    <span class="username">marc.leshh</span>
+                    <span class="username">marc.monsieur</span>
                         Aujourd'hui, j'avais l'honeur de rencontré Mr. François Mitterrand pour discuter de l'état de notre monde culturel. Merci bien pour l'opportunité de parler avec vous @vraiprezmitterrand. <br> En autre nouvelles, ça serait ma dernière publication. Dorénavant, je me concentrerai sur la création artistique pour vraiment apprendre à avoir les yeux d’un artiste. Merci bien pour votre supporte. 
                 </div>
                 <div class="post-comments-link">commentaires</div>
@@ -742,7 +722,7 @@
              <div class="post" onclick="openModal(3)">
                 <div class="post-header">
                     <div class="post-avatar"></div>
-                    <div class="post-user">marc.leshh</div>
+                    <div class="post-user">marc.monsieur</div>
                 </div>
                 <div class="post-image" id="post-image-4"><img src="cartier.png" style="width: 100%; height: 100%; object-fit: cover;"></div>
                 <div class="post-actions">
@@ -752,7 +732,7 @@
                 </div>
                 <div class="post-jaime">480,872 jaime</div>
                 <div class="post-caption">
-                    <span class="username">marc.leshh</span>
+                    <span class="username">marc.monsieur</span>
                     J’ai vraiment aimé mon travail avec @fondationcartier– ils ont juste ouvert un nouvel espace au Paris. Une leçon rapide aujourd'hui: la Fondation Cartier a été désignée par Jean Nouvel. C’est un bâtiment moderne, pour être sûr, mais avec des éléments classiques et naturels. Nouvel est un connaisseur de mon philosophe: vous devriez avoir un contexte historique pour être un homme de votre temps. En ravanche, le bâtiment est aussi un peu compliqué pour moi– est-ce qu'il y a vraiment une signification derrière l’art ou le bâtiment? Ou est-ce que le bâtiment est juste un symbole d’art contemporain? 
 
                 </div>
@@ -761,12 +741,12 @@
 
             </div>
 
-            <div class="post" onclick="openModal(3)">
+            <div class="post" onclick="openModal(4)">
                 <div class="post-header">
                     <div class="post-avatar"></div>
-                    <div class="post-user">marc.leshh</div>
+                    <div class="post-user">marc.monsieur</div>
                 </div>
-                <div class="post-image" id="post-image-4"><img src="ted.png" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                <div class="post-image" id="post-image-5"><img src="ted.png" style="width: 100%; height: 100%; object-fit: cover;"></div>
                 <div class="post-actions">
                     <span>❤️</span>
                     <span>💬</span>
@@ -774,15 +754,149 @@
                 </div>
                 <div class="post-jaime">113,892 jaime</div>
                 <div class="post-caption">
-                    <span class="username">marc.leshh</span>
+                    <span class="username">marc.monsieur</span>
                     J'étais tellement surpris de voir tellement de vous à cette conférence! Merci pour le support continuel. Le conférence est sur YouTube maintenant si vous voulez regardez le vidéo, et j’ai aussi publié un article sur Substack sur Marcus Aurelius dans le contexte d’Art et culture, le lien est dans ma description! 
 Notre événement approche bientôt. N'oubliez pas de réserver votre place ici: lesocietyhumanitehistorique.org. Vive la société Humanité Historique!
                 </div>
                 <div class="post-comments-link">commentaires</div>
-                <div class="post-time">1 day ago</div>
+                <div class="post-time">5 months ago</div>
 
             </div>
+
+
+
+
+          
+              <div class="post" onclick="openModal(5)">
+                <div class="post-header">
+                    <div class="post-avatar"></div>
+                    <div class="post-user">marc.monsieur</div>
+                </div>
+                <div class="post-image" id="post-image-6"><img src="marcus.png" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                <div class="post-actions">
+                    <span>❤️</span>
+                    <span>💬</span>
+                    <span>📨</span>
+                </div>
+                <div class="post-jaime">255,000 jaime</div>
+                <div class="post-caption">
+                    <span class="username">marc.monsieur</span>
+                    Marcus Aurelius: Le stoïcisme
+                    
+                </div>
+                <div class="post-comments-link">commentaires</div>
+                <div class="post-time">9 months ago</div>
+
+
+
+            </div>
+
+              <div class="post" onclick="openModal(6)">
+                <div class="post-header">
+                    <div class="post-avatar"></div>
+                    <div class="post-user">marc.monsieur</div>
+                </div>
+                <div class="post-image" id="post-image-7"><img src="dave.png" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                <div class="post-actions">
+                    <span>❤️</span>
+                    <span>💬</span>
+                    <span>📨</span>
+                </div>
+                <div class="post-jaime">180,024 jaime</div>
+                <div class="post-caption">
+                    <span class="username">marc.monsieur</span>
+                    Leonardo DaVinci: maître des arts
+                </div>
+                <div class="post-comments-link">commentaires</div>
+                <div class="post-time">9 months ago</div>
+
+
+
+            </div>
+              <div class="post" onclick="openModal(7)">
+                <div class="post-header">
+                    <div class="post-avatar"></div>
+                    <div class="post-user">marc.monsieur</div>
+                </div>
+                <div class="post-image" id="post-image-8"><img src="kafka.png" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                <div class="post-actions">
+                    <span>❤️</span>
+                    <span>💬</span>
+                    <span>📨</span>
+                </div>
+                <div class="post-jaime">20,049 jaime</div>
+                <div class="post-caption">
+                    <span class="username">marc.monsieur</span>
+                    Frank Kafka: l'absurdisme
+                </div>
+                <div class="post-comments-link">commentaires</div>
+                <div class="post-time">10 months ago</div>
+
+
+
+            </div>
+              <div class="post" onclick="openModal(8)">
+                <div class="post-header">
+                    <div class="post-avatar"></div>
+                    <div class="post-user">marc.monsieur</div>
+                </div>
+                <div class="post-image" id="post-image-9"><img src="mike.png" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                <div class="post-actions">
+                    <span>❤️</span>
+                    <span>💬</span>
+                    <span>📨</span>
+                </div>
+                <div class="post-jaime">20,300 jaime</div>
+                <div class="post-caption">
+                    <span class="username">marc.monsieur</span>
+                     Michealangelo: la chapelle sixtine
+                </div>
+                <div class="post-comments-link">commentaires</div>
+                <div class="post-time"> 10 months ago</div>
+
+
+            </div>
+              <div class="post" onclick="openModal(9)">
+                <div class="post-header">
+                    <div class="post-avatar"></div>
+                    <div class="post-user">marc.monsieur</div>
+                </div>
+                <div class="post-image" id="post-image-10"><img src="bob.png" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                <div class="post-actions">
+                    <span>❤️</span>
+                    <span>💬</span>
+                    <span>📨</span>
+                </div>
+                <div class="post-jaime">20,028 jaime</div>
+                <div class="post-caption">
+                    <span class="username">marc.monsieur</span>
+                    Bonjour, je m’appelle Marc. Mon mouvement est basé à la fois sur l'éducation et un boycott de consumérisme rapide– je pense que les personnes n’ont pas vraiment des pensées ou intérêts originaux, et je pense qu'un retour aux études des penseurs originaux peut vraiment aider, particulièrement pour les collectionneurs. Je pense qu’on ne peut pas être d'actualité sans contexte. Regard mon Substack pour plus d'informations! 
+                </div>
+                <div class="post-comments-link">commentaires</div>
+                <div class="post-time">10 months ago</div>
             
+           <div class="post" onclick="openModal(10)">
+                <div class="post-header">
+                    <div class="post-avatar"></div>
+                    <div class="post-user">marc.monsieur</div>
+                </div>
+                <div class="post-image" id="post-image-11"><img src="disrespect.png" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                <div class="post-actions">
+                    <span>❤️</span>
+                    <span>💬</span>
+                    <span>📨</span>
+                </div>
+                <div class="post-jaime">28 jaime</div>
+                <div class="post-caption">
+                     les artistes modernes sont cinglés. Vraiment dérangé, impossible, horrible, énorme. Je ne sais pas comment le public peut supporter les artistes modernes. Il faut qu’ils lisent Méditations par Marcus Aurelius pour découvrir le Stoïcisme et la paix intérieure. Par example, Antrios, qui fait des tableau blanc, avec des lignes blancs, et un peu de blanc foncée, est un disgrâce. La raison? Il fait des merdes! A mon avis l’art moderne et abstrait mériterait d’être détruit. Si tout le monde continue à penser que l’art moderne est incroyable, je le détruirai moi-même. C’est de la tricherie pour les personnes qui faisaient l’art moderne de s'appellent des vrais artistes. C’est fou, en fait, qu'ils placent leur valeur au même niveau que les vraies grandes: leonardo da vinci, van gogh, caravaggio. Le nom Antrios de mérite pas d'être un nom connu de tout le monde.  
+                     <span class="username">marc.monsieur</span>
+                </div>
+                <div class="post-comments-link">commentaires</div>
+                <div class="post-time">1 year ago</div>
+
+
+
+            </div>
         </div>
 
         <div class="modal" id="modal">
@@ -793,7 +907,7 @@ Notre événement approche bientôt. N'oubliez pas de réserver votre place ici:
                 <div class="modal-sidebar">
                     <div class="modal-header">
                         <div class="post-avatar"></div>
-                        <div class="post-user" id="modalUser">marce.lessh</div>
+                        <div class="post-user" id="modalUser">marc.lessh</div>
                     </div>
                     <div class="modal-comments" id="modalComments">
                     </div>
@@ -814,37 +928,36 @@ Notre événement approche bientôt. N'oubliez pas de réserver votre place ici:
     <div class="substack-view" id="substackView">
         <div class="substack-header">
             <div class="substack-header-content">
-                <div class="substack-logo">The Thoughtful Observer</div>
-                <button class="back-btn" onclick="showInstagram()">← Back to Instagram</button>
+                <div class="substack-logo">Monsieur Marc</div>
+                <button class="back-btn" onclick="showInstagram()"> Instagram</button>
             </div>
         </div>
 
         <div class="hero">
-            <h1 class="hero-title">The Thoughtful Observer</h1>
-            <p class="hero-subtitle">Essays on technology, culture, and the future we're building together</p>
-            <p class="hero-stats">📧 12,847 subscribers • ✍️ Weekly essays</p>
-            <button class="subscribe-btn">Subscribe</button>
+            <h1 class="hero-title">Monsieur Marc</h1>
+            <p class="hero-subtitle">J'écris des essais sur la culture, l'histoire et la vérité de l'art</p>
+            <p class="hero-stats">200K abonnés </p>
+        
         </div>
 
         <div class="substack-container">
             <article class="essay-post" onclick="openEssay(0)">
-                <div class="post-date">Jan 5, 2026</div>
-                <h2 class="essay-title">Essay Title One</h2>
-                <p class="essay-subtitle">Your essay subtitle goes here. This is a brief description of what the essay is about.</p>
+                <div class="post-date">8 Decembre</div>
+                <h2 class="essay-title">Marcus Aurelius</h2>
+                <p class="essay-subtitle">Mon Ted Talk sur Marcus Aurelius</p>
                 <div class="essay-meta">
-                    <span>📖 8 min read</span>
-                    <span>💬 142 comments</span>
+                    Bonjour Ted Talk. Merci de m'inviter à parler avec vous aujourd'hui, j’ai choisi un topic aujourd'hui que j’ai parlé de beaucoup sur mon instagram, mais jamais dans un théâtre aussi grand que celui la. Aujourd'hui je parle un peu de Marcus Aurelius, le philosophe qui m’a vraiment inspiré à enseigner l’histoire culturelle sur Instagram, et maintenant en personne avec tout le monde qui est ici avec moi aujourd'hui. Donc, on commence avec ses grandes idées: raison, virtue, control et judgement. Toutes ses idées étaient sous le titre de le Stoïcisme, et incluses dans son grand œuvre: Médiations. Il était un penseur révolutionnaire parce qu’il a changé la façon avec laquelle on réagit à nos mouvements et opinions et les mouvements des autres aussi. Marcus Aurelius avait aussi beaucoup des idées sur la vie en général, et je trouve que si on lit Aurelius, on serait plus équipe à interroger l'existence d'humanité. 
+                    
                     <span>❤️ 1.2k jaime</span>
                 </div>
             </article>
 
             <article class="essay-post" onclick="openEssay(1)">
-                <div class="post-date">Dec 29, 2025</div>
-                <h2 class="essay-title">Essay Title Two</h2>
-                <p class="essay-subtitle">Your second essay subtitle goes here. Another brief description of the essay topic.</p>
+                <div class="post-date">21 Septembre</div>
+                <h2 class="essay-title">Albert Camus</h2>
+                <p class="essay-subtitle">Albert Camus et l'absurdité de notre vie</p>
                 <div class="essay-meta">
-                    <span>📖 10 min read</span>
-                    <span>💬 218 comments</span>
+                   Albert Camus était un philosophe qui a influencé notre société et notre façon de penser dans un large mesure. Dans son travail, il a parlé de l’absurdisme: l'idée que malgré notre quête de sens, l'univers est vide et sans sens naturellement. Donc, selon Camus, la seule façon de reconnaître ce conflit et qu'on peut se rebeller contre le conflit et d’embrasser la vie, créer du sens subjectif, et de trouver la passion dans notre vie. Il exprime cette idée dans deux de ses écrits les plus appréciés: l’étranger et Le Mythe de Sisyphe. En L’Étranger, Camus décrit l’histoire de Meursault, et dans cette histoire il explore l’aliénation et la réalité de notre société, en mettant un accent sur l'existentialisme et l’absurdité de la vie. En lisant cet essai, peut-être pensez-vous qu’il était pessimiste: mais ses explorations étaient tellement révolutionnaires parce qu' il a accepté que la vie n'a pas de sens, mais il a continué à écrire et a préconisé les libertés individuelles toutefois. Je vous recommande fortement de lire “L’Étranger” pour vous-mêmes, parce que je ne veux pas gâcher l’intrigue. Mais j'espère que tu as appris quelque chose, et merci bien d'être ici avec moi pour relancer la culture historique.
                     <span>❤️ 2.1k jaime</span>
                 </div>
             </article>
@@ -858,10 +971,23 @@ Notre événement approche bientôt. N'oubliez pas de réserver votre place ici:
     </div>
 
     <script>
-// ====== Grab modal elements ======
+
+// ====== VIEW SWITCHING ======
+function showSubstack() {
+  document.getElementById("instagramView").style.display = "none";
+  document.getElementById("substackView").style.display = "block";
+}
+function showInstagram() {
+  document.getElementById("instagramView").style.display = "block";
+  document.getElementById("substackView").style.display = "none";
+  closeEssay();
+}
+
+// ====== GRAB INSTAGRAM MODAL ELEMENTS ======
 const modal = document.getElementById('modal');
 const modalImage = document.getElementById('modalImage');
 const modalComments = document.getElementById('modalComments');
+
 
 // ====== COMMENT DATA FOR EACH POST ======
 /* -------- POST 1: FARM COMMENTS -------- */
@@ -869,14 +995,14 @@ const commentsData = [
 /* -------- POST 1: FARM COMMENTS -------- */
 [
   { user: 'serge.homme', text: 'Mais Marc…c’est de l’art contemporain? Tu aimes l’art contemporain? Tout ça juste pour réaliser que tu es une artiste contemporaine?' },
-  { user: 'marc.leshh', text: 'J’ai dit!! C’est un expérience viscérale, pas d’art moderne.' },
+  { user: 'marc.monsieur', text: 'C’est un expérience viscérale, pas d’art moderne.' },
   { user: 'yvan.papeterie', text: 'mais c’est un renversement des rôles. ah oui.' },
   { user: 'finkelzooooohn', text: 'Je t’ai dit yvan! Je t’ai vraiment dit.' },
   { user: 'yvan.papeterie', text: 'Et moi aussi. Combien ça coûte pour devenir psychologue?' },
   { user: 'finkelzooooohn', text: 'tu n’as pas la patience pour être spirituel comme moi.' },
   { user: 'museedorsay.officiel', text: 'Marc, ton tableau est magnifique– la simplicité, la férocité, la complexité. Si vous voulez, on voudrait faire un interview avec vous sur votre procès et votre appréciation pour l’Art contemporain.' },
   { user: 'yvan.papeterie', text: 'Marc, t’es finalement un homme de ton temps.' },
-  { user: 'marc.leshh', text: "mais je peux m'expliquer! Je ne suis pas un artiste moderne" },
+  { user: 'marc.monsieur', text: "mais je peux m'expliquer! Je ne suis pas un artiste moderne" },
   { user: 'marcus.aurelius', text: 'Oui…t’es un artiste moderne…et je t’accepte pour qui tu es.' },
   { user: 'serge.homme', text: 'Marcus? Marcus Aurelius? LE Marcus Aurelius? Mais c’est comment ça?' }
 ],
@@ -884,16 +1010,16 @@ const commentsData = [
 /* -------- POST 2: FARM COMMENTS -------- */
 [
   { user: 'paula.p', text: '👍' },
-  { user: 'marc.leshh', text: 'Paula! Tu aimes la ferme?' },
+  { user: 'marc.monsieur', text: 'Paula! Tu aimes la ferme?' },
   { user: 'paula.p', text: 'oui, oui. Tu arrêteras de fumer proche des poules?' },
-  { user: 'marc.leshh', text: 'oui Paula bien sûr ma vie bien sûr. 😞'},
+  { user: 'marc.monsieur', text: 'oui Paula bien sûr ma vie bien sûr. 😞'},
   { user: 'yvan.papeterie', text: 'mais quand est-ce que tu as acheté une ferme? C’est un peu fou non?' },
-  { user: 'marc.leshh', text: 'Pas plus fou que quand Serge a acheté son tableau precious 😂' },
+  { user: 'marc.monsieur', text: 'Pas plus fou que quand Serge a acheté son tableau precious 😂' },
   { user: 'serge.homme', text: 'T’es marrant, toi.' },
   { user: 'serge.homme', text: 'Quand est-ce que je pourrai revenir sur le podcast? Tes fans m’adorent.' },
   { user: 'marcfan101', text: 'On ne t’aime pas, t’es un détraqué.' },
   { user: 'serge.homme', text: 'c’est foutu, ca, vraiment. Marc tu dois contrôler tes fans.' },
-  { user: 'marc.leshh', text: '👎' }
+  { user: 'marc.monsieur', text: '👎' }
 ],
 
 /* -------- POST 3: EXIT ANNOUNCEMENT -------- */
@@ -901,9 +1027,9 @@ const commentsData = [
   { user: 'marcfan101', text: 'Mais non!' },
   { user: 'marcissmartest', text: "Marc tu m’as inspiré à penser d'une manière originale! Vous nous manquez déjà!"},
   { user: 'paula.papier', text: 'eu Marc, on n’a pas discuté de ton changement de carrière.' },
-  { user: 'marc.leshh', text: '🫢' },
+  { user: 'marc.monsieur', text: '🫢' },
   { user: 'fiere.maman', text: 'MARC!!! TU M’APPELLES MAINTENANT.' },
-  { user: 'marc.leshh', text: 'oui maman…' }
+  { user: 'marc.monsieur', text: 'oui maman…' }
 ],
 
 /* -------- POST 4: CAREER CHANGE + MOM CRISIS -------- */
@@ -935,28 +1061,44 @@ const commentsData = [
   { user: 'pasvrai', text: 'prétentieux, exclusif, mechant, vous méritez une gifle sur le visage, Marc aussi.' },
   { user: "serge.homme", text: "j’ai deja fait ca, ne t'inquiète pas."},
   { user: 'pasvrai', text: 'hah!' },
-  { user: 'marc.leshh', text: 'comme serge dit, lis sénèque' },
+  { user: 'marc.monsieur', text: 'comme serge dit, lis sénèque' },
   { user: " pasvrai", text: "@serge.homme, vous êtes juste comme marc! Pourquoi vous n'êtes pas amis?"},
-  { user: "vie.libre', text: 'Inspirational! Vous êtes une sensation Marc! J’ai hâte de vous voir à l'événement!" },
+  { user: "vie.libre", text: "Inspirational! Vous êtes une sensation Marc! J’ai hâte de vous voir à l'événement" },
   { user: 'marcfan101', text: 'Merci pour l’inspiration, j’ai appris beaucoup!' },
   { user: 'Fière.Maman', text: 'Marc je suis tellement fière de toi, t’es la plus célèbre de toutes tes amies!' },
   { user: 'huguette.vrai', text: "Pardon? Mon fils est la meilleure personne du monde, même s' il pense que je suis la dernière roue du carrosse. " },
   { user: 'yvan.papeterie', text: 'pour le 100eme fois, tu n’es pas la dernière roue du carrosse maman! Appelle-moi.' },
   { user: 'huguette.vrai', text: 'tu ne veux pas me rendre visite? Mais t’es vraiment pas gentil à ta pauvre maman. ' }
-]
+], 
+[
+  { user: 'serge.homme', text: 'Mais Marc, tu fais quoi? C’est absolument absurde que tu commences un Instagram pour l’éducation juste pour me contrarier. Tu as pris notre dispute trop loin. Moi, je serais l’homme le plus grand et je te dis que tu dois t’excuser publiquement. Pour la communauté moderniste.' },
+  { user: 'marc.monsieur', text: 'Je pense que c’est toi qui dois t’excuser, non? Je suis juste en train de devenir un professeur culturel pour les pauvres gens comme toi qui pensent qu’ils ont du goût.' },
+  { user: 'serge.homme', text: 'Ton mouvement va être un grand échec, Marc. Je suis sûr.' },
+  { user: 'marcfan101', text: 'waouw, c’est vraiment cool, je te recommande à mes amis tout de suite!' },
+  { user: 'intellectuel1', text: 'ouai, on a besoin de ça! Nous sommes tous des moutons. Merci, Monsieur Marc! Je vous suivre!' },
+  { user: 'superspam5000', text: 'envoyez-moi votre publication 🤩' },
+  { user: 'yvan.papeterie', text: 'Marc, t’es mon inspiration, ma vie, mon univers. Stp, tu me manques. On peut traîner bientôt?' },
+  { user: 'paula.papier', text: 'Marc, pourquoi est-ce qu’il parle comme s’il tombait amoureux de toi?' },
+  { user: 'marc.monsieur', text: 'c’est juste Yvan, chérie.' },
+  { user: 'yvan.papeterie', text: 'JUSTE YVAN? Juste Yvan. Je suis triste.' },
+  { user: 'marc.monsieur', text: 'reste triste.' },
+  { user: 'yvan.papeterie', text: 'Serge, t’es ma meilleure amie maintenant.' }
+], 
+[
+{ user: 'jesuis.antrios', text: 'Vous allez payer pour ça. L\'art moderne est le futur, le présent, et la seule chose qui donne aux gens les moyens d\'atteindre leur plein potentiel. Vraiment, invoque les dieux d’art moderne pour qu’ils vous condamnent.' },
+  { user: 'warhol.andy', text: 'ouai? Ah..ah oui! Je vous condamne!' },
+  { user: 'braque.georges', text: 'Je ne veux pas être impliqué dans ce désastre. Antrios, t’es pas le futur.' },
+  { user: 'marc.monsieur', text: 'hah! haha! Hahaha!' },
+  { user: 'jesuis.antrios', text: '😡😤🗯️' },
+  { user: 'qgia.france', text: 'regardez vos MPs.' },
+  { user: 'serge.homme', text: 'Marc, tu es vraiment insupportable. Tu m’as blessé, mais pourtant tu me fais plus de mal.' },
+  { user: 'marc.monsieur', text: 'Bon. reste blessé, tu m’as blessé aussi.' }
+],
 ];
- // END commentsData
-
-
-// ====== DISPLAY THE RIGHT COMMENTS + IMAGE ======
-function openModal(index) {
+ function openModal(index) {
   modal.classList.add('active');
-
-  // grab the clicked post image
   let img = document.getElementById(`post-image-${index+1}`).innerHTML;
   modalImage.innerHTML = img;
-
-  // clear & fill comments
   modalComments.innerHTML = "";
   commentsData[index].forEach(c => {
     modalComments.innerHTML += `
@@ -966,14 +1108,122 @@ function openModal(index) {
           <span class="comment-user">${c.user}</span>
           <span class="comment-text">${c.text}</span>
         </div>
-      </div>
-    `;
+      </div>`;
   });
 }
+function closeModal() { modal.classList.remove('active'); }
 
-function closeModal() {
-  modal.classList.remove('active');
+
+
+const essays = [
+  {
+    date: '21 Septembre',
+    title: 'Albert Camus',
+    subtitle: "Albert Camus et l'absurdité de notre vie",
+    content: "Albert Camus était un philosophe qui a influencé notre société et notre façon de penser dans un large mesure. Dans son travail, il a parlé de l’absurdisme: l'idée que malgré notre quête de sens, l'univers est vide et sans sens naturellement. Donc, selon Camus, la seule façon de reconnaître ce conflit et qu'on peut se rebeller contre le conflit et d’embrasser la vie, créer du sens subjectif, et de trouver la passion dans notre vie. Il exprime cette idée dans deux de ses écrits les plus appréciés: l’étranger et Le Mythe de Sisyphe. En L’Étranger, Camus décrit l’histoire de Meursault, et dans cette histoire il explore l’aliénation et la réalité de notre société, en mettant un accent sur l'existentialisme et l’absurdité de la vie. En lisant cet essai, peut-être pensez-vous qu’il était pessimiste: mais ses explorations étaient tellement révolutionnaires parce qu' il a accepté que la vie n'a pas de sens, mais il a continué à écrire et a préconisé les libertés individuelles toutefois. Je vous recommande fortement de lire “L’Étranger” pour vous-mêmes, parce que je ne veux pas gâcher l’intrigue. Mais j'espère que tu as appris quelque chose, et merci bien d'être ici avec moi pour relancer la culture historique."
+  },
+  {
+    date: '8 Decembre',
+    title: 'Marcus Aurelius',
+    subtitle: 'Mon Ted Talk sur Marcus Aurelius',
+    content: "Bonjour Ted Talk. Merci de m'inviter à parler avec vous aujourd'hui, j’ai choisi un topic aujourd'hui que j’ai parlé de beaucoup sur mon instagram, mais jamais dans un théâtre aussi grand que celui la. Aujourd'hui je parle un peu de Marcus Aurelius, le philosophe qui m’a vraiment inspiré à enseigner l’histoire culturelle sur Instagram, et maintenant en personne avec tout le monde qui est ici avec moi aujourd'hui. Donc, on commence avec ses grandes idées: raison, virtue, control et judgement. Toutes ses idées étaient sous le titre de le Stoïcisme, et incluses dans son grand œuvre: Médiations. Il était un penseur révolutionnaire parce qu’il a changé la façon avec laquelle on réagit à nos mouvements et opinions et les mouvements des autres aussi. Marcus Aurelius avait aussi beaucoup des idées sur la vie en général, et je trouve que si on lit Aurelius, on serait plus équipe à interroger l'existence d'humanité. "
+  }
+];
+function openEssay(index) {
+  const essay = essays[index];
+  const content = document.getElementById('essayContent');
+  content.innerHTML = `
+    <h1 class="article-title">${essay.title}</h1>
+    <p class="article-subtitle">${essay.subtitle}</p>
+    <div class="article-date">${essay.date}</div>
+    <div class="article-content">${essay.content}</div>`;
+  document.getElementById('essayModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
 }
+function closeEssay() {
+  document.getElementById('essayModal').classList.remove('active');
+  document.body.style.overflow = 'auto';
+}
+
+
+// ====== 📩 DM DATA (CUSTOMIZE THESE!) ======
+const dmThreads = [
+  {
+    user: "serge.homme",
+    messages: [
+      { from: "serge,homme", text: "Marc, je sais qu’on se parle pas maintenant, mais j'ai besoin de ton aide. Il y a un penseur très connu qui te suit, et je veux vraiment l'impressionner. Est-ce que c’est possible pour moi d'être invitée à une de vos conférences? " },
+      { from: "marc.monsieur", text: "Serge, tu ne t’es jamais excusé pour le mépris que tu avais pour moi. Tu penses que les tensions entre nous sont juste grâce à la toile blanche, mais c’est en fait grâce à notre amitié. C’est contradictoire, vraiment, que tu me demande de t’aider après que tu as insulté Paula, insulté mon goût, style, et personnalité, et déconstruit la base de notre amitié. En plus, tu veux juste accumuler plus de fric." },
+      { from: "serge.homme", text: "Bon. je m’en fiche. En tout cas, ton compte est stupide et décevant, tout le monde pense que tu es un héro culturel, mais tu es juste un homme performatif." }
+    ]
+  },
+  {
+    user: "Le QG des ingénieurs aéronautiques",
+    messages: [
+      { from: "qgia.france", text: "Marc. L’artiste Antrios nous a appelés. Il a dit que vous êtes anti-moderniste? Vous travaillez quelque part où on essaie de transformer l’avenir, et c’est incompréhensible que vous ne supportez pas l’art moderne. Je suis désolée, mais vous ne pouvez pas travailler pour nous encore. Merci." },
+      { from: "marc.monsieur", text: "pas possible..." }
+    ]
+  },
+  {
+    user: "yvan.papeterie",
+    messages: [
+      { from: "yvan.papeterie", text: "PROBLÈME INSOLUBLE: ma mère veut emménager avec moi..." },
+      { from: "marc.monsieur", text: "oh non...oh Yvan, j'éspere que tu as dit non?" },
+    { from: "yvan.papeterie", text: "eu...oui?" },
+    ]
+  }
+];
+const dmModal = document.createElement("div");
+dmModal.className = "modal";
+dmModal.id = "dmModal";
+dmModal.innerHTML = `
+  <span class="close-modal" onclick="closeDM()">×</span>
+  <div class="modal-content" style="flex-direction:column; max-width:450px;">
+    <div style="padding:14px 16px; font-weight:700; border-bottom:1px solid #eee;">Messages</div>
+    <div id="dmList" style="overflow-y:auto; flex:1;"></div>
+  </div>`;
+document.body.appendChild(dmModal);
+
+const chatModal = document.createElement("div");
+chatModal.className = "modal";
+chatModal.id = "chatModal";
+chatModal.innerHTML = `
+  <span class="close-modal" onclick="closeChat()">×</span>
+  <div class="modal-content" style="flex-direction:column; max-width:450px;">
+    <div id="chatHeader" style="padding:14px 16px; font-weight:700; border-bottom:1px solid #eee;"></div>
+    <div id="chatMessages" style="overflow-y:auto; flex:1; padding:16px;"></div>
+  </div>`;
+document.body.appendChild(chatModal);
+
+// ====== OPEN DM LIST ======
+function openDM() {
+  dmModal.classList.add('active');
+  let list = document.getElementById("dmList");
+  list.innerHTML = "";
+  dmThreads.forEach((t, i) => {
+    list.innerHTML += `
+      <div onclick="openChat(${i})" style="padding:16px; cursor:pointer; border-bottom:1px solid #eee;">
+        <strong>${t.user}</strong><br>
+        <span style="color:#888;">${t.messages[t.messages.length-1].text.substring(0,40)}...</span>
+      </div>`;
+  });
+}
+function closeDM() { dmModal.classList.remove('active'); }
+
+// ====== OPEN CHAT THREAD ======
+function openChat(index) {
+  closeDM();
+  chatModal.classList.add('active');
+  document.getElementById("chatHeader").innerText = dmThreads[index].user;
+  let box = document.getElementById("chatMessages");
+  box.innerHTML = "";
+  dmThreads[index].messages.forEach(m => {
+    box.innerHTML += `
+      <div style="margin-bottom:12px;">
+        <strong>${m.from}</strong><br>${m.text}
+      </div>`;
+  });
+}
+function closeChat() { chatModal.classList.remove('active'); }
 </script>
 
 
